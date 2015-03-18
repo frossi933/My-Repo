@@ -1,0 +1,67 @@
+=================
+  About my-repo
+=================
+      2012
+-----------------
+
+**my-repo** is a simple revision control program: it allows you to keep track of
+different versions of files in a repository.  It is free as in freedom, released
+under the GNU General Public License version 3: this means you are free to use,
+distribute and modify the program for any porpuse, as long as you provide the
+same freedoms when sharing it with others.  The program is intended to work on
+any POSIX-compliant operating system, although it has only been tested on
+GNU/Linux.
+
+
+Author
+------
+
+myrepo was written by Federico Rossi <frossi.933@gmail.com> as a university
+project for the subject *Data Structures and Algorithms I*.  Comments,
+suggestions and critics are welcome.
+
+
+Building and Usage
+------------------
+
+In order to compile myrepo (assuming that ''make'' and ''gcc'' are available
+on your system), simply run the command::
+
+    $ make
+
+An executable binary file called ''my-repo'' will be generated, which can be run
+by typing::
+
+    $ ./my-repo <action> <arguments>
+
+    where <action> can be *init*, *add*, *commit*, *compare*, *help*, *log*, *rm*
+or *status*, and <arguments> is the list of whitespace-separated arguments
+required by the chosen action, as detailed below:
+
+add
+    One or more paths to files or directories to be added to the repository.
+
+commit
+    Optionally, the flag -m followed by a commit message.  If not present, a
+    message will be requested through the standard input.
+
+compare
+    Two paths to .index repository directories.
+
+help
+    Nothing.
+
+init
+    Nothing.
+
+log
+    Optionally, a revision number, for showing the differences between that
+    revision and the current one.  If not present, the history of commits
+    will be listed.
+
+rm
+    One or more paths to files or directories to be removed from the
+    repository.
+
+status
+    Optionally, the flag -v for listing non-tracked files.

@@ -1,0 +1,41 @@
+=================
+  About my-diff
+=================
+      2012
+-----------------
+
+
+**my-diff** analyzes two files and prints the lines that are different.
+Essentially, it outputs a set of instructions for how to change one file in order 
+to make it identical to the second file. It is my implementation of the unix/linux command called *diff*
+It is free as in freedom, released under the GNU General Public License version 3:
+this means you are free to use, distribute and modify the program for any porpuse,
+as long as you provide the same freedoms when sharing it with others.
+The program is intended to work on any POSIX-compliant operating system,
+although it has only been tested on GNU/Linux.
+
+
+Author
+------
+
+my-diff was written by Federico Rossi <frossi.933@gmail.com> as a university
+project for the subject *Data Structures and Algorithms I*.  Comments,
+suggestions and critics are welcome.
+
+
+Building and Usage
+------------------
+
+In order to compile my-diff (assuming that ''make'' and ''gcc'' are available
+on your system), simply run the command::
+
+    $ make my-diff
+
+An executable binary file called ''my-diff'' will be generated, which can be run
+by typing::
+
+    $ ./my-diff <file1> <file2>
+
+where <file1> and <file2> are two plain text files.
+The output generated is printed for the standard output and the rules follow 
+for this are the same that the original Unix/linux command.
